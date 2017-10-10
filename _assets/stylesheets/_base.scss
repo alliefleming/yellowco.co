@@ -1,0 +1,12 @@
+@import "tether/dist/css/tether";
+
+$enable-transitions: true;
+// COLORS
+$brand-primary: #f4ec09;
+
+@import "bootstrap/scss/bootstrap";
+
+$fa-font-path: "/assets/fonts";
+@import "font-awesome/css/font-awesome";
+@import "select2/dist/css/select2";
+@import "fotorama/fotorama";

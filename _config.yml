@@ -1,0 +1,21 @@
+title: Yellow Co.
+timezone: America/Los_Angeles
+url: https://yellowco.co
+version: 1
+description: Yellow Co. exist to empower creative, entrepreneurial women become agents of good. We do this through a membership platform, an annual conference, and digital media.
+twitter_username: yellowconf
+github_username:  alliefleming
+plugins_dir:
+  - jekyll-feed
+gems:
+- jekyll-feed
+- jekyll-redirect-from
+- jekyll-paginate
+- jekyll-seo-tag
+- jekyll-sitemap
+whitelist:
+- jekyll-feed
+- jekyll-redirect-from
+- jekyll-paginate
+- jekyll-seo-tag
+- jekyll-sitemap

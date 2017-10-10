@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% feed_meta %}
+    {% seo title=false %}
+    {% if page.keywords %}
+      <meta name="keywords" content="{{ page.keywords }}">
+    {% endif %}
+    <link rel="shortcut icon" href="favicon.ico">
+    <title>
+      Yellow Collective
+    </title>
+    <script src="/assets/javascripts/public.js?{{site.time | date: '%s%N'}}" type="text/javascript" charset="utf-8"></script>
+    <link rel="stylesheet" type="text/css" href="/assets/stylesheets/public.css?{{site.time | date: '%s%N'}}">
+  </head>
+  <body>
+    <a id="top"></a>
+    {{ content }}
+    <!-- VERSION {{ site.version }} -->
+  </body>
+</html>
