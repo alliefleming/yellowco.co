@@ -10,7 +10,15 @@
     {% endif %}
     <link rel="shortcut icon" href="favicon.ico">
     <title>
-      Yellow Collective
+      {% if page.custom_page_title %}
+        {{ page.custom_page_title }}
+      {% elsif page.page_title %}
+        {{ page.page_title }} | {{ site.title }}
+      {% elsif page.title %}
+        {{ page.title }} | {{ site.title }}
+      {% else %}
+        {{ site.title }}
+      {% endif %}
     </title>
     <script src="/assets/javascripts/public.js?{{site.time | date: '%s%N'}}" type="text/javascript" charset="utf-8"></script>
     <link rel="stylesheet" type="text/css" href="/assets/stylesheets/public.css?{{site.time | date: '%s%N'}}">

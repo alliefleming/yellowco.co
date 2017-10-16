@@ -1,0 +1,12 @@
+---
+layout: base
+---
+
+{% include header.html %}
+<section id="content">
+  {{ content }}
+</section>
+{% if page.subfooter %}
+  {% include page-subfooter.html %}
+{% endif %}
+{% include footer.html %}
